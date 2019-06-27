@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+
+<script>
+    var frame = window.getElementByClassName('gameframe');
+    frame.scrollTo(20,0);
+</script>    
 <style>
     .top {
         display: flex;
@@ -6,7 +11,7 @@
         font-family: Ubuntu;
         font-size: 2vw;
         background-color: #E7E7E7;
-        margin-right: 14.64vw;
+        margin-right: 14.5vw;
         margin-left: 0vw;
         
         border-top-left-radius: 15px;
@@ -64,14 +69,13 @@
         position: relative;
         overflow: hidden;
         height: 43.924vw;
-        width: 43.924vw;
-        /*margin-left: -.2vw;*/
+        width: 105%;
         margin-top: 4vw;
         margin-bottom: 4vw;
     }
     
     .gameframe iframe {
-        position: absolute;
+       /position: absolute;
         top: 0;
         left: 0;
         width: 100%;
@@ -116,7 +120,7 @@
     
     .footer {
         background: #0080FF;
-        width: 44.1vw;
+        width: 45vw;
         margin-left: 0vw;
         border-bottom-right-radius: 15px;
         border-bottom-left-radius: 15px;
@@ -144,7 +148,7 @@
         background: #E7E7E7;
         border-radius: 15px;
         padding: 0vw;
-        width: 44.1vw;
+        width: 45vw;
         margin-left: 27vw;
         box-shadow: 8px 11px 36px -8px rgba(0,0,0,0.41);
     }
@@ -173,12 +177,10 @@
     </div>
 </head>
 
-<hr>
-     
 <main>
 
  <!--   <div class="body">-->
-   <iframe src="carcrashers/index.html" height="600" width="600" class="gameframe">Your browser cant        display this</iframe>
+   <iframe src="game/index.html" height="600" width="100%"   frameBorder=0 class="gameframe">Your browser cant        display this</iframe>
     
       <!--  <h2 class="gametitle">Car Crashers</h2> -->
 <footer class="footer">
@@ -193,4 +195,3 @@
 </div>
 </body>
 </html>
- 
