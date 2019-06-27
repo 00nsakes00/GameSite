@@ -40,7 +40,7 @@ var Main = new Phaser.Class({
  preload() {
   this.lights.enable();
 
-  this.load.image('Black_viper', 'Black_viper.png');
+  this.load.image('Black_viper', 'game/Black_viper.png');
   this.load.image('Audi', 'Audi.png');
   this.load.image('vanilla_car', 'Car.png');
   this.load.image('mini_truck', 'Mini_truck.png');
