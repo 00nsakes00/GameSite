@@ -141,21 +141,19 @@ create() {
   //  }
   }
 
-  var timedEvent = this.time.addEvent({ delay: 2500, callback: onEvent, callbackScope: this, loop: true });
+  var timedEvent = this.time.addEvent({ delay: 1900, callback: onEvent, callbackScope: this, loop: true });
 
   function onEvent() {
 
     var type_car;
     var lane = Phaser.Math.Between(1,2);
-    console.log(lane);
     if(lane == 1){
-      car_x = Phaser.Math.Between(100,400);
+      car_x = Phaser.Math.Between(100,401);
     }
 
     if(lane == 2){
       car_x = Phaser.Math.Between(400, 500);
     }
-    console.log(lane);
     var car_y = 700
     type_car = Phaser.Math.Between(0, 9);
     if (type_car == 1) {
@@ -230,16 +228,6 @@ create() {
     if(car_state < 100){
       car_state += 1;
     }
-  }
-
- 
- 
-  function off() {
-    console.log('off');
-  }
-
-  if(car_state == 0){
-    console.log("LLLLEEEESSSSSSS")
   }
 
   function collide() {
@@ -379,7 +367,7 @@ create() {
         car_group.clear(true);
         mechanic_group.clear(true)
       }
-      console.log('running');
+     
       car.body.checkCollision.none = true;
 
       var continuetext;
