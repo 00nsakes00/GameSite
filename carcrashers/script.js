@@ -155,7 +155,7 @@ create() {
       car_x = Phaser.Math.Between(400, 500);
     }
     var car_y = 700
-    type_car = Phaser.Math.Between(0, 9);
+    type_car = Phaser.Math.Between(0, 8);
     if (type_car == 1) {
      this.sound.play('carsound');
      car_group.create(car_x, car_y, 'Audi').body.setSize(80, 195,30);
